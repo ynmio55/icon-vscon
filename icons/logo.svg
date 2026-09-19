@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="#11131A" stroke="#334155" stroke-width="2"/>
+  <!-- Minimalist Executive Folder -->
+  <path d="M26 38C26 34 29 31 33 31H54C57 31 59.5 32.5 61 35L67 43H95C99 43 102 46 102 50V90C102 94 99 97 95 97H33C29 97 26 94 26 90V38Z" fill="#1E2230" stroke="#475569" stroke-width="2"/>
+  <path d="M33 31H54L61 35H72" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Sleek Minimal Spark -->
+  <circle cx="64" cy="70" r="4" fill="#38BDF8"/>
+  <path d="M64 54V62M64 78V86M48 70H56M72 70H80" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

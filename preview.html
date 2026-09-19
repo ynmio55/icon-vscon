@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Icons - Minimal & Professional Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0F1117;
+      --panel-bg: #141722;
+      --sidebar-bg: #11131C;
+      --border-color: #212536;
+      --border-subtle: #1C2030;
+      --text-main: #E2E8F0;
+      --text-muted: #7A849C;
+      --text-dim: #4B556D;
+      --hover-bg: #1A1D2B;
+      --accent: #38BDF8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      color: #38BDF8;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 999px;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: #F8FAFC;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .preview-container {
+      display: flex;
+      gap: 28px;
+      max-width: 1200px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* VS Code Simulated Sidebar */
+    .vscode-explorer {
+      width: 380px;
+      background-color: var(--sidebar-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      height: fit-content;
+    }
+
+    .explorer-header {
+      padding: 10px 16px;
+      background-color: #0E1018;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .root-folder {
+      padding: 9px 14px;
+      font-weight: 600;
+      font-size: 0.86rem;
+      color: #CBD5E1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .tree {
+      padding: 6px 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.84rem;
+    }
+
+    .tree-item {
+      display: flex;
+      align-items: center;
+      padding: 4.5px 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.1s ease;
+      gap: 8px;
+      color: #CBD5E1;
+    }
+
+    .tree-item:hover {
+      background-color: var(--hover-bg);
+      color: #F8FAFC;
+    }
+
+    .tree-item.indent-1 { padding-left: 24px; }
+    .tree-item.indent-2 { padding-left: 42px; }
+    .tree-item.indent-3 { padding-left: 60px; }
+
+    .tree-item img.icon {
+      width: 18px;
+      height: 18px;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .tree-item .arrow {
+      font-size: 9px;
+      color: var(--text-dim);
+      width: 10px;
+      display: inline-block;
+    }
+
+    /* Icon Grid Panel */
+    .icon-grid-panel {
+      flex: 1;
+      min-width: 480px;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+
+    .panel-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .panel-heading h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #F1F5F9;
+      letter-spacing: -0.01em;
+    }
+
+    .panel-heading span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .section-title {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 16px 0 10px 0;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .grid-card {
+      background: #11131C;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-align: center;
+      transition: all 0.15s ease;
+    }
+
+    .grid-card:hover {
+      border-color: #38BDF8;
+      background: #171A26;
+      transform: translateY(-1px);
+    }
+
+    .grid-card img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .grid-card span {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    .grid-card:hover span {
+      color: #F8FAFC;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="badge-tag">EXECUTIVE MINIMAL THEME</div>
+    <h1>Next Icons - Minimal & Professional</h1>
+    <p>ธีมไอคอนระดับทางการ เรียบหรู สะอาดตา สบายตา ไม่ฉูดฉาด พร้อมการรองรับที่ครอบคลุมทุก Stack</p>
+  </div>
+
+  <div class="preview-container">
+    <!-- Simulated File Tree -->
+    <div class="vscode-explorer">
+      <div class="explorer-header">
+        <span>Explorer</span>
+        <span>•••</span>
+      </div>
+
+      <div class="root-folder">
+        <span style="font-size: 10px;">▼</span>
+        <span>enterprise-app</span>
+      </div>
+
+      <div class="tree">
+        <!-- .github folder -->
+        <div class="tree-item indent-1">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-github.svg">
+          <span>.github</span>
+        </div>
+
+        <!-- .vscode folder -->
+        <div class="tree-item indent-1">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-vscode.svg">
+          <span>.vscode</span>
+        </div>
+
+        <!-- src folder (expanded) -->
+        <div class="tree-item indent-1">
+          <span class="arrow">▼</span>
+          <img class="icon" src="icons/folder-src-open.svg">
+          <span>src</span>
+        </div>
+        
+        <div class="tree-item indent-2">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-api.svg">
+          <span>api</span>
+        </div>
+        <div class="tree-item indent-2">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-components.svg">
+          <span>components</span>
+        </div>
+        <div class="tree-item indent-2">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-hooks.svg">
+          <span>hooks</span>
+        </div>
+        <div class="tree-item indent-2">
+          <span class="arrow">▶</span>
+          <img class="icon" src="icons/folder-utils.svg">
+          <span>utils</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/react.svg">
+          <span>App.tsx</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/css.svg">
+          <span>global.css</span>
+        </div>
+
+        <!-- assets folder -->
+        <div class="tree-item indent-1">
+          <span class="arrow">▼</span>
+          <img class="icon" src="icons/folder-assets-open.svg">
+          <span>assets</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/image.svg">
+          <span>hero-showcase.png</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/litewave.svg">
+          <span>litewave.png</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/config.svg">
+          <span>litewave.rc</span>
+        </div>
+        <div class="tree-item indent-2">
+          <img class="icon" src="icons/svg.svg">
+          <span>litewave.svg</span>
+        </div>
+
+        <!-- root config files -->
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/docker.svg">
+          <span>docker-compose.yml</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/pm2.svg">
+          <span>ecosystem.config.js</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/next.svg">
+          <span>next.config.ts</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/npm.svg">
+          <span>package.json</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/lock.svg">
+          <span>pnpm-lock.yaml</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/prisma.svg">
+          <span>schema.prisma</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/shell.svg">
+          <span>start_server.sh</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/tailwind.svg">
+          <span>tailwind.config.js</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/typescript.svg">
+          <span>tsconfig.json</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/env.svg">
+          <span>.env.production</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/git.svg">
+          <span>.gitignore</span>
+        </div>
+        <div class="tree-item indent-1">
+          <img class="icon" src="icons/markdown.svg">
+          <span>README.md</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon Grid Gallery -->
+    <div class="icon-grid-panel">
+      <div class="panel-heading">
+        <h2>คอลเลกชันไอคอนที่รองรับ (Comprehensive Set)</h2>
+        <span>40+ Modern Icons</span>
+      </div>
+
+      <div class="section-title">Minimal Executive Folders</div>
+      <div class="grid">
+        <div class="grid-card"><img src="icons/folder.svg"><span>default</span></div>
+        <div class="grid-card"><img src="icons/folder-src.svg"><span>src</span></div>
+        <div class="grid-card"><img src="icons/folder-app.svg"><span>app</span></div>
+        <div class="grid-card"><img src="icons/folder-components.svg"><span>components</span></div>
+        <div class="grid-card"><img src="icons/folder-assets.svg"><span>assets</span></div>
+        <div class="grid-card"><img src="icons/folder-api.svg"><span>api</span></div>
+        <div class="grid-card"><img src="icons/folder-utils.svg"><span>utils</span></div>
+        <div class="grid-card"><img src="icons/folder-hooks.svg"><span>hooks</span></div>
+        <div class="grid-card"><img src="icons/folder-database.svg"><span>database</span></div>
+        <div class="grid-card"><img src="icons/folder-test.svg"><span>test</span></div>
+        <div class="grid-card"><img src="icons/folder-config.svg"><span>config</span></div>
+        <div class="grid-card"><img src="icons/folder-docs.svg"><span>docs</span></div>
+      </div>
+
+      <div class="section-title">Languages & Frameworks</div>
+      <div class="grid">
+        <div class="grid-card"><img src="icons/typescript.svg"><span>TypeScript</span></div>
+        <div class="grid-card"><img src="icons/javascript.svg"><span>JavaScript</span></div>
+        <div class="grid-card"><img src="icons/react.svg"><span>React TSX</span></div>
+        <div class="grid-card"><img src="icons/vue.svg"><span>Vue</span></div>
+        <div class="grid-card"><img src="icons/svelte.svg"><span>Svelte</span></div>
+        <div class="grid-card"><img src="icons/python.svg"><span>Python</span></div>
+        <div class="grid-card"><img src="icons/rust.svg"><span>Rust</span></div>
+        <div class="grid-card"><img src="icons/go.svg"><span>Go</span></div>
+        <div class="grid-card"><img src="icons/cpp.svg"><span>C / C++</span></div>
+        <div class="grid-card"><img src="icons/csharp.svg"><span>C#</span></div>
+        <div class="grid-card"><img src="icons/java.svg"><span>Java</span></div>
+        <div class="grid-card"><img src="icons/dart.svg"><span>Dart / Flutter</span></div>
+      </div>
+
+      <div class="section-title">Tooling, DevOps & Configs</div>
+      <div class="grid">
+        <div class="grid-card"><img src="icons/docker.svg"><span>Docker</span></div>
+        <div class="grid-card"><img src="icons/git.svg"><span>Git</span></div>
+        <div class="grid-card"><img src="icons/next.svg"><span>Next.js</span></div>
+        <div class="grid-card"><img src="icons/tailwind.svg"><span>Tailwind</span></div>
+        <div class="grid-card"><img src="icons/vite.svg"><span>Vite</span></div>
+        <div class="grid-card"><img src="icons/prisma.svg"><span>Prisma</span></div>
+        <div class="grid-card"><img src="icons/graphql.svg"><span>GraphQL</span></div>
+        <div class="grid-card"><img src="icons/sql.svg"><span>SQL</span></div>
+        <div class="grid-card"><img src="icons/shell.svg"><span>Shell Script</span></div>
+        <div class="grid-card"><img src="icons/pm2.svg"><span>PM2 Config</span></div>
+        <div class="grid-card"><img src="icons/eslint.svg"><span>ESLint</span></div>
+        <div class="grid-card"><img src="icons/prettier.svg"><span>Prettier</span></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

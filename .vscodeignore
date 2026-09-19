@@ -1,0 +1,6 @@
+.vscode/**
+scratch/**
+.git/**
+.gitignore
+example-project/**
+**/.env*
