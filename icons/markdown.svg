@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <rect x="2.5" y="4.5" width="19" height="15" rx="3" fill="#181A24" stroke="#94A3B8" stroke-width="1.2"/>
-  <path d="M5.5 14V10L7.5 12L9.5 10V14M14.5 10V14M12.5 12L14.5 14L16.5 12" stroke="#CBD5E1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M9 5v3.59l1.3-1.3a1 1 0 0 1 1.4 1.42l-3 3a1 1 0 0 1-.46.26l-.04.01h-.06L8.1 12a1 1 0 0 1-.8-.3l-3-3a1 1 0 0 1 1.4-1.4L7 8.58V5a1 1 0 1 1 2 0"/></defs><path fill="#2dd4bf" fill-opacity=".4" fill-rule="evenodd" d="M5 1h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4"/><path fill="#f8fafc" fill-opacity="0.1" d="M15 5v6a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4M5 2a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3z"/><use fill="#2dd4bf" href="#a"/><use fill="#f8fafc" fill-opacity="0.1" href="#a"/></svg>
