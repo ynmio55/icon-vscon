@@ -1,29 +1,19 @@
 {
   "name": "next-icons",
-  "displayName": "Next Icons - Minimal & Professional",
-  "description": "An executive-grade, minimal and professional file icon theme for VS Code and Google Antigravity.",
-  "version": "0.2.0",
+  "displayName": "Next Icons - Premium Developer Icons",
+  "description": "A polished, colorful and dimensional file icon theme for VS Code and compatible editors.",
+  "version": "0.3.0",
   "publisher": "local-developer",
   "engines": {
     "vscode": "^1.60.0"
   },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "icon",
-    "theme",
-    "file-icons",
-    "minimal",
-    "professional",
-    "clean",
-    "developer"
-  ],
+  "categories": ["Themes"],
+  "keywords": ["icon","theme","file-icons","premium","colorful","developer"],
   "contributes": {
     "iconThemes": [
       {
         "id": "next-icons",
-        "label": "Next Icons (Minimal & Professional)",
+        "label": "Next Icons (Premium)",
         "path": "./icons/icons.json"
       }
     ]
