@@ -1,8 +1,8 @@
 {
   "name": "next-icons",
-  "displayName": "Next Icons - Illustrated Premium",
-  "description": "A vivid illustrated developer icon theme with expressive folders and recognizable file icons.",
-  "version": "0.5.0",
+  "displayName": "Next Icons - Recognizable Logos",
+  "description": "A developer icon theme focused on instantly recognizable technology logos and clear semantic folder icons.",
+  "version": "0.6.0",
   "publisher": "local-developer",
   "engines": {
     "vscode": "^1.60.0"

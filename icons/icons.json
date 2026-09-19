@@ -444,6 +444,54 @@
     },
     "logo": {
       "iconPath": "./logo.svg"
+    },
+    "folder_controllers": {
+      "iconPath": "./folder-controllers.svg"
+    },
+    "folder_controllers_open": {
+      "iconPath": "./folder-controllers-open.svg"
+    },
+    "folder_models": {
+      "iconPath": "./folder-models.svg"
+    },
+    "folder_models_open": {
+      "iconPath": "./folder-models-open.svg"
+    },
+    "folder_middleware": {
+      "iconPath": "./folder-middleware.svg"
+    },
+    "folder_middleware_open": {
+      "iconPath": "./folder-middleware-open.svg"
+    },
+    "folder_services": {
+      "iconPath": "./folder-services.svg"
+    },
+    "folder_services_open": {
+      "iconPath": "./folder-services-open.svg"
+    },
+    "folder_uploads": {
+      "iconPath": "./folder-uploads.svg"
+    },
+    "folder_uploads_open": {
+      "iconPath": "./folder-uploads-open.svg"
+    },
+    "folder_cmd": {
+      "iconPath": "./folder-cmd.svg"
+    },
+    "folder_cmd_open": {
+      "iconPath": "./folder-cmd-open.svg"
+    },
+    "folder_chain": {
+      "iconPath": "./folder-chain.svg"
+    },
+    "folder_chain_open": {
+      "iconPath": "./folder-chain-open.svg"
+    },
+    "folder_go": {
+      "iconPath": "./folder-go.svg"
+    },
+    "folder_go_open": {
+      "iconPath": "./folder-go-open.svg"
     }
   },
   "file": "file",
@@ -529,7 +577,21 @@
     "tooling": "folder_tools",
     "e2e": "folder_e2e",
     "cypress": "folder_e2e",
-    "playwright": "folder_e2e"
+    "playwright": "folder_e2e",
+    "controllers": "folder_controllers",
+    "controller": "folder_controllers",
+    "models": "folder_models",
+    "model": "folder_models",
+    "middleware": "folder_middleware",
+    "services": "folder_services",
+    "service": "folder_services",
+    "uploads": "folder_uploads",
+    "upload": "folder_uploads",
+    "cmd": "folder_cmd",
+    "commands": "folder_cmd",
+    "multichain": "folder_chain",
+    "chain": "folder_chain",
+    ".gocache": "folder_go"
   },
   "folderNamesExpanded": {
     "src": "folder_src_open",
@@ -611,7 +673,21 @@
     "tooling": "folder_tools_open",
     "e2e": "folder_e2e_open",
     "cypress": "folder_e2e_open",
-    "playwright": "folder_e2e_open"
+    "playwright": "folder_e2e_open",
+    "controllers": "folder_controllers_open",
+    "controller": "folder_controllers_open",
+    "models": "folder_models_open",
+    "model": "folder_models_open",
+    "middleware": "folder_middleware_open",
+    "services": "folder_services_open",
+    "service": "folder_services_open",
+    "uploads": "folder_uploads_open",
+    "upload": "folder_uploads_open",
+    "cmd": "folder_cmd_open",
+    "commands": "folder_cmd_open",
+    "multichain": "folder_chain_open",
+    "chain": "folder_chain_open",
+    ".gocache": "folder_go_open"
   },
   "fileExtensions": {
     "js": "javascript",
