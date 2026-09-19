@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <path d="M17.5 7.5C16.8 5.8 15 4.5 12.8 4.5C9.5 4.5 7.5 7 7.5 9.5C7.5 14 16.5 11.5 16.5 15.5C16.5 18 14 19.5 11.5 19.5C8.8 19.5 7.2 18 6.5 16.5" stroke="#FF3E00" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF784B"/><stop offset="1" stop-color="#C63A15"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="1" stdDeviation="1.05" flood-opacity=".32"/></filter></defs><rect x="3" y="3" width="18" height="18" rx="5" fill="url(#g)" filter="url(#s)"/><path d="M5.4 7.2c3-2.1 9.8-2.9 13.2-.5" stroke="#fff" stroke-opacity=".22" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="15.1" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" text-anchor="middle" fill="#F8FAFC">SV</text></svg>

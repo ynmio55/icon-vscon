@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="#141724" stroke="#06B6D4" stroke-width="1.2"/>
-  <path d="M5.5 14C8 10.5 9.5 10.5 12 14C14.5 17.5 16 17.5 18.5 14" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-  <circle cx="12" cy="7.5" r="1.5" fill="#38BDF8"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38D9FF"/><stop offset="1" stop-color="#146FA9"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="1" stdDeviation="1.05" flood-opacity=".32"/></filter></defs><rect x="3" y="3" width="18" height="18" rx="5" fill="url(#g)" filter="url(#s)"/><path d="M5.4 7.2c3-2.1 9.8-2.9 13.2-.5" stroke="#fff" stroke-opacity=".22" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="15.1" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" text-anchor="middle" fill="#F8FAFC">LW</text></svg>
