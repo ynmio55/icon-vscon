@@ -8,7 +8,7 @@
 
 ### 📥 วิธีที่ 1: ติดตั้งผ่านเมนู Extensions (ง่ายที่สุด ⭐)
 
-1. ดาวน์โหลดหรือรับไฟล์ `next-icons-0.6.0.vsix` มาไว้ที่เครื่อง
+1. ดาวน์โหลดไฟล์ [next-icons-0.6.0.vsix](https://github.com/ynmio55/icon-vscon/raw/premium-icons-v0.3/next-icons-0.6.0.vsix) มาไว้ที่เครื่อง
 2. เปิดโปรแกรม **VS Code / Antigravity / Cursor**
 3. ไปที่แท็บ **Extensions** (กดคีย์ลัด `Ctrl + Shift + X` หรือ `Cmd + Shift + X`)
 4. คลิกที่ปุ่มจุดสามจุด (`...`) บริเวณมุมขวาบนของแท็บ Extensions
