@@ -1,8 +1,8 @@
 {
   "name": "next-icons",
-  "displayName": "Next Icons - Premium Developer Icons",
-  "description": "A polished, colorful and dimensional file icon theme for VS Code and compatible editors.",
-  "version": "0.4.0",
+  "displayName": "Next Icons - Illustrated Premium",
+  "description": "A vivid illustrated developer icon theme with expressive folders and recognizable file icons.",
+  "version": "0.5.0",
   "publisher": "local-developer",
   "engines": {
     "vscode": "^1.60.0"
